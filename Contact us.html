@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact us form</title>
+    <link rel="stylesheet" href="Contact us.css" />
+  </head>
+  <body>
+    <div class="contact-us">
+      <h1>Contact Us</h1>
+      <p>
+        Please let's hear what you got to say about this contact form project
+      </p>
+    </div>
+    <div class="form-wrapper">
+      <form name="myForm">
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input class="" type="text" name="fullName" placeholder="Full Name" />
+          <div class="error hidden">Your name is required</div>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input
+            class=""
+            type="text"
+            name="email"
+            placeholder="Your Email Address"
+          />
+          <div class="error hidden">Your email is invalid</div>
+          <div class="info"></div>
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input
+            class=""
+            type="text"
+            name="phone"
+            placeholder="Your Phone Number"
+          />
+          <div class="error hidden">Your phone number is invalid</div>
+          <div class="call-back"></div>
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Message Us</label>
+          <textarea name="message" placeholder="Your Message"></textarea>
+          <div class="error hidden">Your feedback is required</div>
+        </div>
+
+        <hr />
+
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+
+    <div class="thank-you hidden">Thank you for your feedback!!</div>
+    <script src="Contact us.js"></script>
+  </body>
+</html>
